@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free CSS | Free CSS Templates | Demo of the HTML CSS Template Careo</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsiv.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <ul class="slideBar">
+            <button onclick=hideSlidebar(); id="btn-in-navbar"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg></button>
+            <a href="https://www.free-css.com/free-css-templates">
+                <li>Home</li>
+            </a>
+            <a href="#About">
+                <li>About</li>
+            </a>
+            <a href="#Service">
+                <li>Service</li>
+            </a>
+            <a href="#Customer">
+                <li>Customer</li>
+            </a>
+            <a href="#Contact">
+                <li>Contact Us</li>
+            </a>
+        </ul>
+        <nav>
+            <button onclick=showSlidebar(); class="navBar"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg></button>
+
+            <div class="lista">
+                <ul>
+                    <a href="https://www.free-css.com/free-css-templates">
+                        <li>Home</li>
+                    </a>
+                    <a href="#About">
+                        <li>About</li>
+                    </a>
+                    <a href="#Service">
+                        <li>Service</li>
+                    </a>
+                    <a href="#Customer">
+                        <li>Customer</li>
+                    </a>
+                    <a href="#Contact">
+                        <li>Contact Us</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="https://www.free-css.com/free-css-templates"> <img src="./Imazhe/logo.png"
+                        alt="background-image"></a>
+            </div>
+            <div class="kontakt">
+                <a href="https://www.free-css.com/free-css-templates"> Call :(+71)1234567890</a>
+                <a href="https://www.free-css.com/free-css-templates"> Email: mail@domain.com</a>
+                <a href="https://www.free-css.com/free-css-templates"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </nav>
+    </header>
+    <div class="carousel" data-carousel>
+        <div class="carousel-buttons">
+            <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+                <span class="fas fa-chevron-circle-left"></span>
+            </button>
+            <button class="carousel-button carousel-button_next" data-carousel-button-next>
+                <span class="fas fa-chevron-circle-right"></span>
+            </button>
+        </div>
+        <div class="slides" data-carousel-slides-container>
+            <section class="slide">
+                <div class="divText">
+                    <span>WELCOME TO</span>
+                    <h1>LABSPA</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration
+                        in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        If you
+                        are</p>
+                    <div class="divBtn">
+                        <button id="btn-ReadMore">Read More</button>
+                        <button id="btn-BookNow">Book Now</button>
+                    </div>
+                </div>
+                <div class="divImg">
+                    <img src="./Imazhe/girl.png" alt="girl-img">
+                </div>
+            </section>
+            <section class="slide">
+                <div class="divText">
+                    <span>WELCOME TO</span>
+                    <h1>LABSPA</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration
+                        in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        If you
+                        are</p>
+                    <div class="divBtn">
+                        <button id="btn-ReadMore2">Read More</button>
+                        <button id="btn-BookNow2">Book Now</button>
+                    </div>
+                </div>
+                <div class="divImg">
+                    <img src="./Imazhe/girl.png" alt="girl-img">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section class="Service" id="Service">
+        <div>
+            <h2> <img src="./Imazhe/head.png" alt="imgages"> Our Services </h2>
+        </div>
+        <div class="row-div" id="row-div">
+            <div class="card text-end">
+                <img class="card-img-top" src="./Imazhe/thr.png" alt="Title" />
+                <div class="card-body">
+                    <h3 class="card-title">COSMETIC</h3>
+                    <p class="card-text">some form, by injected humour, or randomised words which don't look even
+                        slightly believable. If you are</p>
+                </div>
+            </div>
+            <div class="card text-end">
+                <img class="card-img-top" src="./Imazhe/thr1.png" alt="Title" />
+                <div class="card-body">
+                    <h3 class="card-title">NAILS</h3>
+                    <p class="card-text">some form, by injected humour, or randomised words which don't look even
+                        slightly believable. If you are</p>
+                </div>
+            </div>
+            <div class="card text-end">
+                <img class="card-img-top" src="./Imazhe/thr2.png" alt="Title" />
+                <div class="card-body">
+                    <h3 class="card-title">HAIRDRESSING</h3>
+                    <p class="card-text">some form, by injected humour, or randomised words which don't look even
+                        slightly believable. If you are</p>
+                </div>
+            </div>
+        </div>
+        <div><button>Read More</button></div>
+    </section>
+    <section class="About" id="About">
+        <div class="about-div-conteiner">
+            <h2><img src="./Imazhe/head.h.png" alt="images"> About Our Labspa</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+                are There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable. If you are</p>
+            <button>Read More</button>
+        </div>
+    </section>
+    <div class="carousel" data-carousel>
+        <div class="carousel-buttons" id="carousel-btn">
+            <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="carousel-button carousel-button_next" data-carousel-button-next>
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="slides" data-carousel-slides-container>
+            <section class="Customer" id="Customer">
+                <h2><img src="./Imazhe/head.png" alt="images"> Our Customer Feedback</h2>
+                <div class="Customer-div-tonteiner">
+                    <div class="Customer-info">
+                        <i><img src="./Imazhe/tes.png" alt="images">
+                        </i>
+                        <h4>Rohali jonson</h4>
+                        <span>customer</span>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even
+                            slightly
+                            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                            isn't
+                            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                            Internet
+                            tend to repeat predefined</p>
+                        <img src="./Imazhe/icon.png" alt="icon">
+                    </div>
+                </div>
+            </section>
+            <section class="Customer" id="Customer">
+                <h2><img src="./Imazhe/head.png" alt="images"> Our Customer Feedback</h2>
+                <div class="Customer-div-tonteiner">
+                    <div class="Customer-info">
+                        <i><img src="./Imazhe/tes.png" alt="images">
+                        </i>
+                        <h4>Rohali jonson</h4>
+                        <span>customer</span>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even
+                            slightly
+                            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                            isn't
+                            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                            Internet
+                            tend to repeat predefined</p>
+                        <img src="./Imazhe/icon.png" alt="icon">
+                    </div>
+                </div>
+            </section>
+            <section class="Customer" id="Customer">
+                <h2><img src="./Imazhe/head.png" alt="images"> Our Customer Feedback</h2>
+                <div class="Customer-div-tonteiner">
+                    <div class="Customer-info">
+                        <i><img src="./Imazhe/tes.png" alt="images">
+                        </i>
+                        <h4>Rohali jonson</h4>
+                        <span>customer</span>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even
+                            slightly
+                            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                            isn't
+                            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                            Internet
+                            tend to repeat predefined</p>
+                        <img src="./Imazhe/icon.png" alt="icon">
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+    <section class="Contact" id="Contact">
+        <h2><img src="./Imazhe/head.h.png" alt="images"> <span style="color: black;"> Request</span> A call Back</h2>
+        <div class="row-div-contact">
+            <div class="contact-div-left">
+                <div>
+                    <input name="Name" type="text" id="Name" placeholder="Name">
+                </div>
+                <div>
+                    <input name="Email" type="email" id="Email" placeholder="Email">
+                </div>
+                <div>
+                    <input name="Phonenumber" type="number" id="Number" placeholder="Phone Number">
+                </div>
+                <div>
+                    <textarea id="Message" name="Message" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <button id="Send-Btn">SEND</button>
+                </div>
+            </div>
+            <div class="contact-div-right">
+                <div class="map-area">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0360977185!2d-74.30933341658171!3d40.69753995848722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1701116124228!5m2!1sen!2s"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <h3>NEWSLETTER</h3>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <button>SUBSCRIBE</button>
+        </div>
+
+        <div class="footer-conteiner">
+            <div>
+                <a href="https://www.free-css.com/free-css-templates"><img src="./Imazhe/logo1.png" alt="logo"></a>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+                    eros.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
+                    eros.</p>
+            </div>
+            <div>
+                <h3>CONTACT US</h3>
+                <a href="https://www.free-css.com/free-css-templates">Donec odio.</a>
+                <a href="https://www.free-css.com/free-css-templates"> Quisque
+                    volutpat mattis
+                    eros.</a>
+                <a href="https://www.free-css.com/free-css-templates">Lorem ipsum dolor
+                    sit amet,</a>
+                <a href="https://www.free-css.com/free-css-templates">consectetuer
+                    adipiscing elit.</a>
+                <a href="https://www.free-css.com/free-css-templates">Donec
+                    odio.</a>
+                <a href="https://www.free-css.com/free-css-templates">Quisque volutpat</a>
+            </div>
+            <div>
+                <h3>INFORMATION</h3>
+                <a href="https://www.free-css.com/free-css-templates">Donec odio.</a>
+                <a href="https://www.free-css.com/free-css-templates"> Quisque
+                    volutpat mattis
+                    eros.</a>
+                <a href="https://www.free-css.com/free-css-templates">Lorem ipsum dolor
+                    sit amet,</a>
+                <a href="https://www.free-css.com/free-css-templates">consectetuer
+                    adipiscing elit.</a>
+                <a href="https://www.free-css.com/free-css-templates">Donec
+                    odio.</a>
+                <a href="https://www.free-css.com/free-css-templates">Quisque volutpat</a>
+            </div>
+            <div>
+                <h3>MY ACCOUNT</h3>
+                <a href="https://www.free-css.com/free-css-templates">Donec odio.</a>
+                <a href="https://www.free-css.com/free-css-templates"> Quisque
+                    volutpat mattis
+                    eros.</a>
+                <a href="https://www.free-css.com/free-css-templates">Lorem ipsum dolor
+                    sit amet,</a>
+                <a href="https://www.free-css.com/free-css-templates">consectetuer
+                    adipiscing elit.</a>
+                <a href="https://www.free-css.com/free-css-templates">Donec
+                    odio.</a>
+                <a href="https://www.free-css.com/free-css-templates">Quisque volutpat</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2045 All Rights Reserved. <a href="https://html.design">Html Design</a></p>
+        </div>
+    </footer>
+    <div class="img-footer">
+        <a href="https://www.free-css.com/free-css-templates"><img src="./Imazhe/elegantthemes-900x120.jpg"
+                alt="imgages"></a>
+    </div>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

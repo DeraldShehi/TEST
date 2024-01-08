@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body * {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    width: 100vw;
+    flex-direction: column;
+    background: url(./Imazhe/header_bg.jpg);
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+nav button {
+    display: none;
+}
+
+.slideBar {
+    display: none;
+    position: static;
+    flex-direction: column;
+    background: rgba(0, 0, 0);
+    padding-top: 20px;
+    z-index: 999;
+    width: 100%;
+    height: 300px;
+}
+
+.slideBar a {
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+#btn-in-navbar {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    border: white solid 1px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.lista {
+    width: 35%;
+}
+
+.lista a:nth-child(1) {
+    color: #bc1939;
+}
+
+.lista a:hover {
+    color: #bc1939;
+    transition: ease-in all .3s;
+}
+
+.lista a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: bold;
+    color: black;
+    transition: ease-in all .3s;
+}
+
+.kontakt {
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+}
+
+.kontakt a {
+    text-decoration: none;
+    color: black;
+    padding: 0 3px;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    display: flex;
+    padding-top: 200px;
+    background: url(./Imazhe/banner.jpg);
+    background-repeat: no-repeat;
+    flex-direction: row;
+    background-size: 100% 100%;
+}
+
+.divText {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 0 10px;
+    padding-left: 50px;
+}
+
+.divImg {
+    width: 50%;
+    display: flex;
+    padding: 0 10px;
+}
+
+.divImg img {
+    width: 100%;
+    height: auto;
+}
+
+.divText span {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.divText h1 {
+    font-size: 130px;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.divText p {
+    color: white;
+    font-size: 18px;
+    line-height: 2rem;
+    margin-top: 30px;
+}
+
+.divBtn {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: ease-in all .5s;
+}
+
+.divText button {
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    position: relative;
+}
+
+.divText button:hover {
+    content: " ";
+    background-color: black;
+    color: white;
+    transition: ease-in all .5s;
+    cursor: pointer;
+}
+
+.carousel {
+    --current-slide: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-button {
+    position: relative;
+    bottom: -820px;
+    left: 30px;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.carousel-button:hover {
+    color: white;
+}
+
+.carousel-button_next {
+    position: relative;
+    right: 0;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.Service {
+    display: flex;
+    padding: 90px 0;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.Service h2 {
+    font-size: 40px;
+    color: #1d1b28;
+    line-height: 55px;
+    font-weight: 800;
+    padding: 0;
+}
+
+.Service button {
+    background-color: black;
+    color: white;
+    transition: ease-in all .5s;
+}
+
+.Service button:hover {
+    content: " ";
+    background: #bc1939;
+    color: #fff;
+    transition: ease-in all .5s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.row-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 0 30px 0;
+    gap: 1rem;
+}
+
+.card {
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 30%;
+    border: #e9e9e9 solid 1px;
+    padding: 50px 20px 25px 20px;
+    transition: ease-in all .5s;
+}
+
+.card img {
+    width: 30%;
+}
+
+.card h3 {
+    text-align: center;
+    color: #070803;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin: 20px 0;
+    transition: ease-in all .5s;
+}
+
+.card p {
+    text-align: center;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2e2e2e;
+    transition: ease-in all .5s;
+    font-weight: 500;
+}
+
+.card:hover {
+    content: " ";
+    background-color: #bc1939;
+    color: white;
+    transition: ease-in all .5s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card:hover h3 {
+    color: white;
+}
+
+.card:hover p {
+    color: white;
+}
+
+.About {
+    background: url(./Imazhe/about_bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-div-conteiner {
+    width: 65%;
+    margin-left: 100px;
+}
+
+.About h2 {
+    color: white;
+    margin-bottom: 22px;
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 800;
+    padding: 0;
+}
+
+.About p {
+    color: white;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.About button {
+    background-color: black;
+    color: white;
+    transition: ease-in all .5s;
+}
+
+.About button:hover {
+    content: " ";
+    background-color: white;
+    color: #bc1939;
+    transition: ease-in all .5s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    flex: 0 0 100%;
+}
+
+#carousel-btn {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: -200px;
+}
+
+#carousel-btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    background-color: #a2152b;
+    color: white;
+}
+
+#carousel-btn i:hover {
+    background-color: black;
+}
+
+
+.Customer h2 {
+    font-size: 40px;
+    color: #1d1b28;
+    line-height: 55px;
+    font-weight: 800;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.Customer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Customer-info h4 {
+    font-size: 24px;
+    color: #1d1b28;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 40px 0 10px 0;
+}
+
+.Customer-info span {
+    color: #bc1939;
+    display: block;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.Customer-info p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #1d1b28;
+    margin-bottom: 30px;
+}
+
+.Customer-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Contact {
+    background: url(./Imazhe/contact.jpg);
+    display: flex;
+    padding: 90px 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.Contact h2 {
+    font-size: 40px;
+    color: white;
+    line-height: 55px;
+    font-weight: 800;
+    padding: 0;
+}
+
+.row-div-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0;
+    gap: 2em;
+}
+
+.contact-div-left {
+    padding-left: 80px;
+    width: 50%;
+}
+
+.contact-div-left input {
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    border: none;
+    font-size: 16px;
+}
+
+.contact-div-left textarea {
+    width: 100%;
+    padding: 60px 0 60px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+}
+
+.contact-div-left button {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    transition: ease-in all .5s;
+    margin-top: 40px;
+}
+
+.contact-div-left button:hover {
+    background-color: white;
+    color: #bc1939;
+    transition: ease-in all .5s;
+}
+
+.contact-div-right {
+    width: 50%;
+}
+
+.map-area {
+    width: 100%;
+    height: 100%;
+}
+
+.map-area iframe {
+    width: 85%;
+    height: 85%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0 0 0;
+    background: #191919;
+    text-align: center;
+    color: white;
+}
+
+
+.footer-top {
+    display: flex;
+    justify-content: end;
+    margin-left: 300px;
+}
+
+.footer-top h3 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    line-height: 47px;
+    padding-right: 100px;
+}
+
+.footer-top input {
+    width: 40%;
+    height: 50px;
+    padding: 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-top button {
+    width: 120px;
+    height: 44px;
+    background-color: #bc1939;
+    border-radius: 30px;
+    transition: ease-in all .5s;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    right: 124px;
+    bottom: -3px;
+}
+
+.footer-top button:hover {
+    background-color: black;
+    transition: ease-in all .5s;
+}
+
+.footer-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    font-size: 17px;
+    font-family: Lato, sans-serif;
+    line-height: 1.80857;
+    font-weight: 400;
+}
+
+.footer-conteiner div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 20%;
+    text-align: left;
+}
+
+.footer-conteiner div h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.footer-conteiner a {
+    text-decoration: none;
+    color: white;
+    transition: ease-in all .3s;
+}
+
+.footer-conteiner a:hover {
+    color: #a2152b;
+    transition: ease-in all .3s;
+}
+
+.copyright {
+    background-color: #a2152b;
+    padding: 20px 0;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    transition: ease-in all .3s;
+}
+
+.copyright a:hover {
+    transition: ease-in all .3s;
+    color: black;
+}
+
+.img-footer {
+    display: block;
+    width: 100%;
+    padding: 120px 0 20px;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 5000;
+    text-align: center;
+}
